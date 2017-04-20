@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -87,12 +87,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="KOKO">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="ADDVICE 通过添加括号来减少开发过程中的复杂性, 增加可阅读性; 当创建对象的属性时, 可以使用 null 来赋值; 可以使用 x === undefined 来检测某个值或函数的某个参数是否存在 检测某个东西或某个值是否存在或是否为空 x == null 在平常开发时不要使用连等操作符( a = b =c)  JS数据类型基础数据类型(不可改变) number 无穷 NaN 不等于任何数字">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript 高级程序设计之基本概念">
+<meta property="og:url" content="http://yoursite.com/2017/04/18/JavaScript高级程序设计之基础知识/index.html">
 <meta property="og:site_name" content="KOKO">
+<meta property="og:description" content="ADDVICE 通过添加括号来减少开发过程中的复杂性, 增加可阅读性; 当创建对象的属性时, 可以使用 null 来赋值; 可以使用 x === undefined 来检测某个值或函数的某个参数是否存在 检测某个东西或某个值是否存在或是否为空 x == null 在平常开发时不要使用连等操作符( a = b =c)  JS数据类型基础数据类型(不可改变) number 无穷 NaN 不等于任何数字">
+<meta property="og:updated_time" content="2017-04-20T03:48:05.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KOKO">
+<meta name="twitter:title" content="JavaScript 高级程序设计之基本概念">
+<meta name="twitter:description" content="ADDVICE 通过添加括号来减少开发过程中的复杂性, 增加可阅读性; 当创建对象的属性时, 可以使用 null 来赋值; 可以使用 x === undefined 来检测某个值或函数的某个参数是否存在 检测某个东西或某个值是否存在或是否为空 x == null 在平常开发时不要使用连等操作符( a = b =c)  JS数据类型基础数据类型(不可改变) number 无穷 NaN 不等于任何数字">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/18/JavaScript高级程序设计之基础知识/"/>
 
 
 
 
 
-  <title> KOKO </title>
+  <title> JavaScript 高级程序设计之基本概念 | KOKO </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="Chinese">
@@ -151,9 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,177 +239,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/19/CSS选择器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="KngZhi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="KOKO">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/04/19/CSS选择器/" itemprop="url">
-                  CSS选择器备忘录
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-19T15:00:52+08:00">
-                2017-04-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="CSS选择器备忘录"><a href="#CSS选择器备忘录" class="headerlink" title="CSS选择器备忘录"></a>CSS选择器备忘录</h1><p>群组选择器 <code>div, p { code here }</code></p>
-<h2 id="常用选择器"><a href="#常用选择器" class="headerlink" title="常用选择器"></a>常用选择器</h2><p>兼容性: IE6 只注意 <code>:active</code>&amp;<code>:hover</code> 忽略 <code>:focus</code>, IE7 支持 <code>hover</code> 忽略其他<br>常用的选择器</p>
-<ul>
-<li>类型选择器(元素选择器)</li>
-<li>后代选择器</li>
-</ul>
-<p>尽量通过集合类型, 后代, ID 和类 来获取自己想要的内容;</p>
-<p>伪类</p>
-<ul>
-<li>链接伪类<ul>
-<li><code>:link</code></li>
-<li><code>:visited</code></li>
-</ul>
-</li>
-<li>动态伪类()<ul>
-<li><code>:hover</code></li>
-<li><code>:active</code></li>
-<li><code>:focus</code></li>
-</ul>
-</li>
-</ul>
-<p>P.S 通过连接伪类可以创建更复杂的行为. <code>a:visited:hover { color: olive; }</code></p>
-<h2 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h2><p>与其他选择器结合使用时, 通用选择器可以用来对某个元素的 <strong>所有后代</strong> 应用样式.</p>
-<h2 id="高级选择器"><a href="#高级选择器" class="headerlink" title="高级选择器"></a>高级选择器</h2><p>兼容性: IE6- 不支持, 因此在站点功能或布局很重要的任何元素上应尽量避免使用这些高级选择器.</p>
-<h3 id="子选择器和相邻同胞选择器"><a href="#子选择器和相邻同胞选择器" class="headerlink" title="子选择器和相邻同胞选择器"></a>子选择器和相邻同胞选择器</h3><p>子选择器, 只选择元素的<strong>直接后代</strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#nav</span> &gt; <span class="selector-tag">li</span> &#123;</div><div class="line">    <span class="comment">/*code here*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>以上的代码内容不会影响到列表中的列表内容;</p>
-<p>兼容性: IE7+支持, 但 IE7 中若父元素和子元素之间有 HTML 注释就会出问题.</p>
-<p>QS: 如何在 IE6 及更低版本中模拟子选择器的效果.<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#nav</span> <span class="selector-tag">li</span>&#123;</div><div class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(..) no-repeat left top;</div><div class="line">    <span class="attribute">padding-left</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-id">#nav</span> <span class="selector-tag">li</span> * &#123;</div><div class="line">    <span class="attribute">background-image</span>: none;</div><div class="line">    <span class="attribute">padding-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*对该元素的所有后代元素添加样式, 然后再清除该元素后代元素的后代元素;*/</span></div></pre></td></tr></table></figure></p>
-<p>相邻同胞选择器, 定位同一个父元素下某个元素之后的元素.<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h2</span> + <span class="selector-tag">p</span> &#123;</div><div class="line">    <span class="comment">/*code here*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>兼容性: IE7 中如果在目标元素之间有注释会出现问题.</p>
-<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">acronym</span><span class="selector-attr">[title]</span> &#123;</div><div class="line">    <span class="comment">/*code here*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>兼容性: IE6 不支持属性选择器</p>
-<h3 id="层叠和特殊性"><a href="#层叠和特殊性" class="headerlink" title="层叠和特殊性"></a>层叠和特殊性</h3><p>层叠的重要度次序</p>
-<ol>
-<li>标有 <code>!important</code> 的用户样式</li>
-<li>标有 <code>!important</code> 的作者样式</li>
-<li>作者样式</li>
-<li>用户样式</li>
-<li>浏览器/用户代理应用的样式</li>
-</ol>
-<p>选择器特殊性的4个成分等级: a,b,c,d -&gt; abcd (1,0,1,2  -&gt; 1012);</p>
-<ul>
-<li>样式是行内样式 <code>style=&quot;&quot;</code>, 那么 a = 1</li>
-<li>b 等于 id 选择器的总数</li>
-<li>c 等于类, 伪类和属性选择的数量</li>
-<li>d 等于类型选择器和伪元素选择器的数量</li>
-</ul>
-<p>总结: 行内 &gt; id &gt; class, 伪类 &gt; 类型选择器,伪元素选择器</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -436,10 +271,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/04/18/JavaScript高级程序设计之基础知识/" itemprop="url">
-                  JavaScript 高级程序设计之基本概念
-                </a>
+                JavaScript 高级程序设计之基本概念
               
             
           </h1>
@@ -490,9 +322,7 @@
       
 
       
-        
-          
-            <h2 id="ADDVICE"><a href="#ADDVICE" class="headerlink" title="ADDVICE"></a>ADDVICE</h2><ul>
+        <h2 id="ADDVICE"><a href="#ADDVICE" class="headerlink" title="ADDVICE"></a>ADDVICE</h2><ul>
 <li>通过添加括号来减少开发过程中的复杂性, 增加可阅读性;</li>
 <li>当创建对象的属性时, 可以使用 null 来赋值;</li>
 <li>可以使用 <code>x === undefined</code> 来检测某个值或函数的某个参数是否存在</li>
@@ -746,42 +576,72 @@
 <h3 id="关系操作符-gt-lt-gt-lt"><a href="#关系操作符-gt-lt-gt-lt" class="headerlink" title="关系操作符(&gt; &lt; &gt;= &lt;=)"></a>关系操作符(<code>&gt; &lt; &gt;= &lt;=</code>)</h3><p>如果有一个是数字, 则把另外一个也转化成数字类型;<br>二元运算符. 左结合. 下面一个坑 <code>7 &gt; 6 &gt; 5</code> = <code>var</code> (7 &gt; 6) =&gt; true -&gt; 1 &gt; 5 所以返回是 <code>false</code> 这就是左结合的含义.</p>
 <p>返回的一定是布尔值;</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
       
 
       
+        
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/19/CSS选择器/" rel="next" title="CSS选择器备忘录">
+                <i class="fa fa-chevron-left"></i> CSS选择器备忘录
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -789,6 +649,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -808,8 +672,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -862,6 +735,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ADDVICE"><span class="nav-number">1.</span> <span class="nav-text">ADDVICE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JS数据类型"><span class="nav-number">2.</span> <span class="nav-text">JS数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础数据类型-不可改变"><span class="nav-number">2.1.</span> <span class="nav-text">基础数据类型(不可改变)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#null-与-undefined-的异同"><span class="nav-number">2.1.1.</span> <span class="nav-text">null 与 undefined 的异同</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂数据"><span class="nav-number">2.2.</span> <span class="nav-text">复杂数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型转换"><span class="nav-number">3.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作符"><span class="nav-number">4.</span> <span class="nav-text">操作符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一元操作符"><span class="nav-number">4.1.</span> <span class="nav-text">一元操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二元操作符"><span class="nav-number">4.2.</span> <span class="nav-text">二元操作符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑非操作符"><span class="nav-number">4.2.1.</span> <span class="nav-text">逻辑非操作符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑与操作符"><span class="nav-number">4.2.2.</span> <span class="nav-text">逻辑与操作符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑或操作符"><span class="nav-number">4.2.3.</span> <span class="nav-text">逻辑或操作符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系操作符-gt-lt-gt-lt"><span class="nav-number">4.3.</span> <span class="nav-text">关系操作符(> < >= <=)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -971,6 +860,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 

@@ -1,0 +1,720 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="Chinese">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="CSS选择器备忘录群组选择器 div, p { code here } 常用选择器兼容性: IE6 只注意 :active&amp;amp;:hover 忽略 :focus, IE7 支持 hover 忽略其他常用的选择器  类型选择器(元素选择器) 后代选择器  尽量通过集合类型, 后代, ID 和类 来获取自己想要的内容; 伪类  链接伪类 :link :visited   动态伪类() :hover">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS选择器备忘录">
+<meta property="og:url" content="http://yoursite.com/2017/04/19/CSS选择器/index.html">
+<meta property="og:site_name" content="KOKO">
+<meta property="og:description" content="CSS选择器备忘录群组选择器 div, p { code here } 常用选择器兼容性: IE6 只注意 :active&amp;amp;:hover 忽略 :focus, IE7 支持 hover 忽略其他常用的选择器  类型选择器(元素选择器) 后代选择器  尽量通过集合类型, 后代, ID 和类 来获取自己想要的内容; 伪类  链接伪类 :link :visited   动态伪类() :hover">
+<meta property="og:updated_time" content="2017-04-20T02:54:39.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS选择器备忘录">
+<meta name="twitter:description" content="CSS选择器备忘录群组选择器 div, p { code here } 常用选择器兼容性: IE6 只注意 :active&amp;amp;:hover 忽略 :focus, IE7 支持 hover 忽略其他常用的选择器  类型选择器(元素选择器) 后代选择器  尽量通过集合类型, 后代, ID 和类 来获取自己想要的内容; 伪类  链接伪类 :link :visited   动态伪类() :hover">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/19/CSS选择器/"/>
+
+
+
+
+
+  <title> CSS选择器备忘录 | KOKO </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="Chinese">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">KOKO</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/19/CSS选择器/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="KngZhi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="KOKO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS选择器备忘录
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-19T15:00:52+08:00">
+                2017-04-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="CSS选择器备忘录"><a href="#CSS选择器备忘录" class="headerlink" title="CSS选择器备忘录"></a>CSS选择器备忘录</h1><p>群组选择器 <code>div, p { code here }</code></p>
+<h2 id="常用选择器"><a href="#常用选择器" class="headerlink" title="常用选择器"></a>常用选择器</h2><p>兼容性: IE6 只注意 <code>:active</code>&amp;<code>:hover</code> 忽略 <code>:focus</code>, IE7 支持 <code>hover</code> 忽略其他<br>常用的选择器</p>
+<ul>
+<li>类型选择器(元素选择器)</li>
+<li>后代选择器</li>
+</ul>
+<p>尽量通过集合类型, 后代, ID 和类 来获取自己想要的内容;</p>
+<p>伪类</p>
+<ul>
+<li>链接伪类<ul>
+<li><code>:link</code></li>
+<li><code>:visited</code></li>
+</ul>
+</li>
+<li>动态伪类()<ul>
+<li><code>:hover</code></li>
+<li><code>:active</code></li>
+<li><code>:focus</code></li>
+</ul>
+</li>
+</ul>
+<p>P.S 通过连接伪类可以创建更复杂的行为. <code>a:visited:hover { color: olive; }</code></p>
+<h2 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h2><p>与其他选择器结合使用时, 通用选择器可以用来对某个元素的 <strong>所有后代</strong> 应用样式.</p>
+<h2 id="高级选择器"><a href="#高级选择器" class="headerlink" title="高级选择器"></a>高级选择器</h2><p>兼容性: IE6- 不支持, 因此在站点功能或布局很重要的任何元素上应尽量避免使用这些高级选择器.</p>
+<h3 id="子选择器和相邻同胞选择器"><a href="#子选择器和相邻同胞选择器" class="headerlink" title="子选择器和相邻同胞选择器"></a>子选择器和相邻同胞选择器</h3><p>子选择器, 只选择元素的<strong>直接后代</strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#nav</span> &gt; <span class="selector-tag">li</span> &#123;</div><div class="line">    <span class="comment">/*code here*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>以上的代码内容不会影响到列表中的列表内容;</p>
+<p>兼容性: IE7+支持, 但 IE7 中若父元素和子元素之间有 HTML 注释就会出问题.</p>
+<p>QS: 如何在 IE6 及更低版本中模拟子选择器的效果.<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#nav</span> <span class="selector-tag">li</span>&#123;</div><div class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(..) no-repeat left top;</div><div class="line">    <span class="attribute">padding-left</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-id">#nav</span> <span class="selector-tag">li</span> * &#123;</div><div class="line">    <span class="attribute">background-image</span>: none;</div><div class="line">    <span class="attribute">padding-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*对该元素的所有后代元素添加样式, 然后再清除该元素后代元素的后代元素;*/</span></div></pre></td></tr></table></figure></p>
+<p>相邻同胞选择器, 定位同一个父元素下某个元素之后的元素.<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h2</span> + <span class="selector-tag">p</span> &#123;</div><div class="line">    <span class="comment">/*code here*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>兼容性: IE7 中如果在目标元素之间有注释会出现问题.</p>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">acronym</span><span class="selector-attr">[title]</span> &#123;</div><div class="line">    <span class="comment">/*code here*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>兼容性: IE6 不支持属性选择器</p>
+<h3 id="层叠和特殊性"><a href="#层叠和特殊性" class="headerlink" title="层叠和特殊性"></a>层叠和特殊性</h3><p>层叠的重要度次序</p>
+<ol>
+<li>标有 <code>!important</code> 的用户样式</li>
+<li>标有 <code>!important</code> 的作者样式</li>
+<li>作者样式</li>
+<li>用户样式</li>
+<li>浏览器/用户代理应用的样式</li>
+</ol>
+<p>选择器特殊性的4个成分等级: a,b,c,d -&gt; abcd (1,0,1,2  -&gt; 1012);</p>
+<ul>
+<li>样式是行内样式 <code>style=&quot;&quot;</code>, 那么 a = 1</li>
+<li>b 等于 id 选择器的总数</li>
+<li>c 等于类, 伪类和属性选择的数量</li>
+<li>d 等于类型选择器和伪元素选择器的数量</li>
+</ul>
+<p>总结: 行内 &gt; id &gt; class, 伪类 &gt; 类型选择器,伪元素选择器</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/18/JavaScript高级程序设计之基础知识/" rel="prev" title="JavaScript 高级程序设计之基本概念">
+                JavaScript 高级程序设计之基本概念 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="KngZhi" />
+          <p class="site-author-name" itemprop="name">KngZhi</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS选择器备忘录"><span class="nav-number">1.</span> <span class="nav-text">CSS选择器备忘录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用选择器"><span class="nav-number">1.1.</span> <span class="nav-text">常用选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通用选择器"><span class="nav-number">1.2.</span> <span class="nav-text">通用选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级选择器"><span class="nav-number">1.3.</span> <span class="nav-text">高级选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子选择器和相邻同胞选择器"><span class="nav-number">1.3.1.</span> <span class="nav-text">子选择器和相邻同胞选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器"><span class="nav-number">1.3.2.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#层叠和特殊性"><span class="nav-number">1.3.3.</span> <span class="nav-text">层叠和特殊性</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">KngZhi</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
